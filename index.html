@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="LT">
+
+<head>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+        
+        .page {
+            border: 1px solid gray;
+            width: 800px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        
+        h3 {
+            text-align: left;
+        }
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        
+        .top {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        
+        .kod {
+            font-weight: bold;
+        }
+        
+        .bot {
+            text-align: center;
+        }
+    </style>
+    <title>Picture inline</title>
+</head>
+
+<body>
+    <div class="page">
+        <h1 class="bot">HTML Paveikslėliai</h1>
+        <p>HTML kalboje paveikslėliai yra įterpiami per žymą <span class="kod">&#60;img&#62;. &#60;img&#62;</span> žyma yra VOID elementas, ji taigi, ji neturi uždarymo žymos ir negali laikyti turinio. Paveikslėlio dydis yra keičiamas CSS taisyklių pagalba. <span class="kod">&#60;img&#62;</span> taip pat turi <span class="kod">width</span> ir <span class="kod">height</span> parametrus, kurie nurodo paveikslėlio dydį pikseliais. Visgi, geriausia praktika - šių atributų nenaudoti, o paveikslėlio dydį keisti aprašant CSS stiliaus taisykles.</p>
+
+        <h3>Paveikslėlio įterpimas ir dydžio keitimas (naudojant style="" atributą):</h3>
+        <div class="top">
+            <img src="img/img1.png" style="width: 130px" alt="cat lady">
+            <img src="img/img2.jpg" style="width: 130px" alt="eyes">
+            <img src="img/img3.png" style="width: 130px" alt="turtle">
+        </div>
+        <h3>Paveikslėlio įterpimas naudojant &#60;figure&#62; elementą:</h3>
+        <figure>
+            <img src="img/img4.png" style="width: 450px" class="center" alt="design">
+        </figure>
+        <p class="bot">Paveikslėlis su <a href="(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">&#60;figcaption&#62;</a> elementu</p>
+        <h3>Paveikslėlis su nuoroda + &#60;figcaption&#62;</h3>
+        <figure class="bot">
+            <a href="https://dribbble.com" target="_blank">
+                <img src="https://www.underconsideration.com/brandnew/archives/dribbble_logo_detail.png" style="width: 450px" class="center" alt="driblle_logo">
+            </a>
+            <figcaption>Paveikslėliai užduočiai:&#169; <a href="http://dribbble.com">dribbble</a></figcaption>
+        </figure>
+        <!-- dribble logotipas
+https://www.underconsideration.com/brandnew/archives/dribbble_logo_detail.png
+-->
+    </div>
+</body>
+
+</html>
